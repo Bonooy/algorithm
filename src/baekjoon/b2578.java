@@ -1,9 +1,6 @@
 package baekjoon;
 
 import java.util.Scanner;
-// 1. 빙고판 숫자들이 사회자가 부른 숫자와 일치할 경우 그 숫자를 -1로 변환
-// 2. 행, 열, 대각선을 확인하여 0이 5개면 빙고 카운트 개수를 증가
-// 3. 빙고 카운트가 3개 이상이 되면 0이 된 숫자의 개수를 출력
 
 public class b2578 {
 
@@ -27,7 +24,7 @@ public class b2578 {
                 for (int k = 0; k < 5; k++) {
 
                     if (bingo[j][k] == num) {
-                        bingo[j][k] = -1; // -1 로 설정해두고
+                        bingo[j][k] = -1;
 
                         if (check(j, k) >= 3) {
                             System.out.println(answer);
@@ -59,10 +56,9 @@ public class b2578 {
 
         int cCount = 0;
         for ( int i=0; i<5; i++) {  // 우하향 대각선
-            if ( bingo[i][i] == -1 ) cCount++;
+            if (bingo[i][i] == -1) cCount++;
             if (cCount == 5) count++;
         }
-
 
         cCount= 0;
         for (int i = 4; i >= 0; i--) {  // 우상향 대각선
@@ -72,3 +68,8 @@ public class b2578 {
         return count;
     }
 }
+
+
+// 1. 빙고판 숫자들이 사회자가 부른 숫자와 일치할 경우 그 숫자를 -1로 변환
+// 2. 행, 열, 대각선을 확인하여 -1이 5개면 빙고 카운트 개수를 증가
+// 3. 빙고 카운트가 3개 이상이 되면 -1이 된 숫자의 개수를 출력

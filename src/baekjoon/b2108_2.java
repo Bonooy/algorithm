@@ -56,16 +56,15 @@ public class b2108_2 {
         for(int x:arr) {
             if(x < 0) {
                 cnt[Math.abs(x)+4000]++;
-                // 음수의 경우 4000을 더해서 해당 인덱스 증가
+                // 음수의 경우 4000을 더해서 인덱스 증가
             }
             else cnt[x]++;
         }
 
-        int idx =0;
+
         for(int i=0;i<cnt.length;i++) {
-            if(cnt[i]!=0 && cnt[i]>max) {	//카운트 배열에서 최빈값 찾기
+            if(cnt[i]!=0 && cnt[i]>max) {
                 max = cnt[i];
-                idx = i;
             }
         }
 
@@ -86,7 +85,8 @@ public class b2108_2 {
         else return arrayList.get(0);
     }
 
-    static int range(int[] arr) { // 범위 메소드
-        return arr[arr.length-1] - arr[0]; // 정렬 후 마지막 숫자와 첫 번째 숫자를 빼줌
+    static int range(int[] arr) {
+
+        return arr[arr.length-1] - arr[0];
     }
 }
