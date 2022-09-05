@@ -2,7 +2,7 @@ package baekjoon;
 
 import java.util.Scanner;
 
-public class b2578 {
+public class B2578 {
 
     static int[][] bingo = new int[5][5];
     static int answer = 0;

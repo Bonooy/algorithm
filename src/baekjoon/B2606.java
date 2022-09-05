@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class b2606 {    // 자료구조 bfs, dfs 사용 문제
+public class B2606 {    // 자료구조 bfs, dfs 사용 문제
 
     static boolean[] check;
     static int[][] arr;

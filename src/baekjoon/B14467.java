@@ -3,7 +3,7 @@ package baekjoon;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class b14467 {
+public class B14467 {
     static int n;
     static int[] cow;
     public static void main(String[] args) {
