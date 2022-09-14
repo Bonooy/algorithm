@@ -2,7 +2,6 @@ package baekjoon;
 
 import java.io.*;
 
-
 public class B11729 {   // 하노이탑 (재귀)
 
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
