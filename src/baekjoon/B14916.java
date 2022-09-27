@@ -8,6 +8,13 @@ public class B14916 {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
+        int cnt = check(n);
+
+        System.out.println(cnt);
+
+    }
+
+    static int check(int n) {
         int cnt = 0;
 
         while (n > 0) {
@@ -20,9 +27,9 @@ public class B14916 {
         }
 
         if (n < 0) {
-            System.out.println(-1);
+            return -1;
         } else {
-            System.out.println(cnt);
+            return cnt;
         }
     }
 }
